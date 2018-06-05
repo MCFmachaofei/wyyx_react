@@ -1,5 +1,5 @@
 {
-  "name": "react_Boss_client",
+  "name": "wyyx_react",
   "version": "1.0.1",
   "private": true,
   "dependencies": {
@@ -112,5 +112,17 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  }
+  },
+  "description": "* 此项目为一个前后台分离的招聘的SPA, 包括前端应用(master分支)和后端应用(server分支)\r * 包括用户注册/登陆, 大神/老板列表, 实时聊天等模块\r * 前端: 使用React全家桶+ES6+Webpack等技术\r * 后端: 使用Node + express + mongodb + socketIO等技术\r * 采用模块化、组件化、工程化的模式开发",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MCFmachaofei/wyyx_react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MCFmachaofei/wyyx_react/issues"
+  },
+  "homepage": "https://github.com/MCFmachaofei/wyyx_react#readme"
 }
