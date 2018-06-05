@@ -1,0 +1,83 @@
+@import "../../assets/stylus/mixins.styl"
+$rem = 375/10rem
+base()
+  box-sizing border-box
+  font-size (14/$rem)
+  line-height (22/$rem)
+  padding (8/$rem) (5/$rem)
+  border-bottom 1px solid gray
+  outline none
+  &::-webkit-input-placeholder
+    color #7f7f7f
+baseInput()
+  width (100%)
+  height (46/$rem)
+  font-size (14/$rem)
+  border-radius 8px
+.LoginWrap
+  width 100%
+  position relative
+  height 1000px
+  overflow hidden
+  .container
+    position relative
+    top (38/$rem)
+    .logo
+      margin-top (28/$rem)
+      text-align center
+      img
+        width (96/$rem)
+        height (32/$rem)
+    form
+      padding (40/$rem) (20/$rem) 0
+      .phone
+        width 100%
+        base()
+      .number
+        base()
+        .code
+          outline none
+          font-size (14/$rem)
+      .inputNumber
+        display inline-block
+        float right
+        font-size 28px
+        color #333
+        width (82/$rem)
+        height (26/$rem)
+        line-height (26/$rem)
+        border 1px solid #7f7f7f
+        text-align center
+        border-radius 8px
+      .other
+        width 100%
+        height (20/$rem)
+        display flex
+        justify-content space-between
+        margin (20/$rem) 0
+        .question, .password
+          font-size (14/$rem)
+        .password
+          color #333
+
+      .bottom
+        width 100%
+        input[type=submit]
+          baseInput()
+          background #b4282d
+          color #fff
+        input[type=button]
+          baseInput()
+          margin-top (10/$rem)
+          background white
+          color #b4282d
+          border 1px solid #b4282d
+
+        p
+          display inline-block
+          width 100%
+          text-align center
+          font-size (14/$rem)
+          color #333
+
+

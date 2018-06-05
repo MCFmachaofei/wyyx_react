@@ -1,0 +1,77 @@
+@import "../../assets/stylus/mixins.styl"
+$rem = 750/10rem
+.ShopCar
+  background-color #f4f4f4
+  position relative
+  .ShopCar_head
+    position fixed
+    top 0
+    z-index 10
+    width 100%
+    height (88/$rem)
+    box-sizing border-box
+    line-height (88/$rem)
+    padding 0 (30/$rem)
+    font-size (36/$rem)
+    text-align center
+    bottom-border-1px(gray)
+    background-color white
+  .ShopCar_content
+    position fixed
+    top (88/$rem)
+    left 0
+    right 0
+    bottom 0
+    width 100%
+    background #f4f4f4
+    .ShopCar_content_wrap
+      background-color #f4f4f4
+      box-sizing border-box
+      padding 0 (30/$rem)
+      width 100%
+      position relative
+      clearFix()
+      li
+        box-sizing border-box
+        width (33.3333%)
+        height (70/$rem)
+        line-height (70/$rem)
+        float left
+        text-align center
+        font-size (24/$rem)
+        vertical-align middle
+        span
+          display inline-block
+          margin-right (6/$rem)
+          width (10/$rem)
+          height (10/$rem)
+          background url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/servicePolicy-1d7541974f.png") no-repeat
+          vertical-align middle
+    .shopLogo
+      position absolute
+      top 0
+      right 0
+      bottom 0
+      left 0
+      margin auto
+      width (248/$rem)
+      height (248/$rem)
+      display flex
+      flex-direction column
+      justify-content center
+      align-items center
+      .shopLogo_title
+        font-size (28/$rem)
+        color #999999
+        text-align center
+        margin-top (-10/$rem)
+        margin-bottom (50/$rem)
+    .login
+      width (480/$rem)
+      height (92/$rem)
+      font-size (30/$rem)
+      color #fff
+      text-align center
+      line-height (92/$rem)
+      background-color #b4282d
+      border-radius (8/$rem)

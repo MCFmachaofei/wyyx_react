@@ -1,0 +1,52 @@
+@import "../../assets/stylus/mixins.styl"
+$rem = 750/10rem
+header.header
+  position fixed!important
+  top 0
+  width 100%
+  height (76/$rem)
+  background white
+  z-index 100
+  bottom-border-1px(gray)
+  box-sizing border-box
+  padding 0 (10/$rem)
+  display flex
+  justify-content space-between
+  .head_left
+    width (50/$rem)
+    height (50/$rem)
+    display inline-block
+    vertical-align middle
+    margin-top (13/$rem)
+    &.iconfont
+      font-size (42/$rem)
+  .head_logo
+    position absolute
+    left 0
+    top 0
+    right 0
+    bottom 0
+    margin auto
+    width (175/$rem)
+    height (48/$rem)
+    background url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/sprites/hd-s342878591a-9af1a97852.png") no-repeat
+    background-position 0 (-128/$rem)
+  .head_right
+    width (130/$rem)
+    height (55/$rem)
+    .head_right_search
+      display inline-block
+      float left
+      width (55/$rem)
+      height (55/$rem)
+      background url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/sprites/hd-s342878591a-9af1a97852.png") no-repeat
+      background-position 0 (-334/$rem)
+      margin-right (18/$rem)
+      margin-top (11/$rem)
+    .head_right_ShopCar
+      display inline-block
+      float left
+      width (55/$rem)
+      height (55/$rem)
+      margin-top (11/$rem)
+      background url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/sprites/hd-s342878591a-9af1a97852.png") no-repeat

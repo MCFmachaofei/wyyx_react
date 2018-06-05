@@ -1,0 +1,38 @@
+@import "../../assets/stylus/mixins.styl"
+$rem = 750/10rem
+.rightClassify
+  width (77%)
+  float right
+  box-sizing border-box
+  padding (30/$rem) (30/$rem) (21/$rem)
+  margin-bottom (98/$rem)
+  .rightClassify_head
+    .rightClassify_head_img
+      width (100%)
+      height (192/$rem)
+  .title
+    color #333
+    text-align center
+    font-size (28/$rem)
+    height (108/$rem)
+    line-height (108/$rem)
+    &>span
+      color #d9d9d9
+  .right_content
+    clearFix()
+    .right_content_main
+      float left
+      clearFix()
+    .right_content_main_item
+      float left
+      width (33.333%)
+      &>img
+        width (100%)
+        border-radius (50%)!important
+        text-align center
+      p
+        font-size (24/$rem)
+        height (72/$rem)
+        color #333
+        text-align center
+        line-height (34/$rem)

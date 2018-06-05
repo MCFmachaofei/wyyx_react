@@ -1,0 +1,82 @@
+@import "../../assets/stylus/mixins.styl"
+$rem = 750/10rem
+section.moreThings
+  width 100%
+  margin-bottom (20/$rem)
+  background-color white
+  position relative
+  header.moreThings_head
+    width 100%
+    height (120/$rem)
+    display flex
+    flex-flow row nowrap
+    justify-content center
+    align-items center
+    .moreThings_head_title
+      color #333
+      font-size (32/$rem)
+  .moreThings_content
+    width 100%
+    box-sizing border-box
+    padding 0 (10/$rem)
+    clearFix()
+    .moreThings_item
+      box-sizing border-box
+      float left
+      position relative
+      padding 0 (8/$rem)
+      padding-bottom (33/$rem)
+      .show
+        width 100%
+        background-color #f4f4f4
+        .moreThings_item_image
+          width (345/$rem)
+          height (345/$rem)
+        .moreThings_item_titile
+          box-sizing border-box
+          height 100%
+          background #F1ECE2
+          border-radius 0 0 (4/$rem) (4/$rem)
+          font-size (24/$rem)
+          width (345/$rem)
+          color #9F8A60
+          letter-spacing 0
+          line-height (30/$rem)
+          padding (20/$rem) (10/$rem)
+      .about
+        width 100%
+        .about_title
+          box-sizing border-box
+          text-align left
+          padding (10/$rem)
+          font-size: (28/$rem)
+          color #333
+          line-height (48/$rem)
+          width (345/$rem)
+        .about_price
+          font-size (32/$rem)
+          text-align left
+          color #b4282d
+          padding (10/$rem)
+  .last
+    box-sizing border-box
+    width 50%
+    background-color #f4f4f4
+    padding-bottom 0!important
+    .moreThings_item_last_content
+      padding (130/$rem) 0  (129/$rem)
+      width 100%
+      display flex
+      flex-direction column
+      align-items center
+      .last_text
+        color #333
+        font-size (32/$rem)
+        line-height: 1;
+        margin-bottom (60/$rem)
+      .icon
+        display inline-block
+        width (67/$rem)
+        height (67/$rem)
+        background url("./images/go.png") no-repeat
+        background-size 100% 100%

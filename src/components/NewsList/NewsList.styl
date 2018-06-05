@@ -1,0 +1,77 @@
+@import "../../assets/stylus/mixins.styl"
+$rem = 750/10rem
+section.newsList
+  float left
+  height (480/$rem)
+  padding-bottom (20/$rem)
+  margin-bottom (20/$rem)
+  background-color white
+  .newsList_news
+    height (460/$rem)
+    display flex
+    align-items center
+    float left
+    padding-top (32/$rem)
+    overflow hidden
+    line-height (10/$rem)
+    .newsList_items
+      width (280/$rem)
+      height (100%)
+      margin-left (30/$rem)
+      float left
+      position relative
+      &.last
+        margin-right (30/$rem)
+      .content
+        position absolute
+        top 0
+        left 0
+        &.last
+          line-height 1
+          width (280/$rem)
+          height (280/$rem)
+          border (10/$rem) solid #f4f4f4
+          margin-right (30/$rem)
+          box-sizing border-box
+          .lastText
+            display block
+            font-size (28/$rem)
+            color #666
+            text-align center
+            line-height (280/$rem)
+        img
+          width (280/$rem)
+          height (280/$rem)
+          background #f4f4f4
+          display block
+        &>div
+          width (280/$rem)
+          line-height (34/$rem)
+          .preferential
+            display inline-block
+            line-height (20/$rem)
+            background-color #f48f18
+            margin-left (12/$rem)
+            margin-bottom (1/$rem)
+            height (20/$rem)
+            padding (5/$rem) (16/$rem)
+            font-size (20/$rem)
+            text-align center
+            vertical-align middle
+            color white
+          .newsList_title
+            font-size (28/$rem)
+            line-height (34/$rem)
+            color #333
+            padding 0 (10/$rem)
+            margin (10/$rem) 0
+          .newsList_about
+            font-size (24/$rem)
+            margin-bottom (14/$rem)
+            color #7f7f7f
+            line-height (30/$rem)
+            padding 0 (10/$rem)
+          .newsList_price
+            font-size (28/$rem)
+            text-align left
+            color #b4282d

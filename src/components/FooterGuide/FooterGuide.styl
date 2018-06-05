@@ -1,0 +1,35 @@
+@import "../../assets/stylus/mixins.styl"
+  .footer_nav
+    top-border-1px(#d9d9d9)
+    position fixed
+    z-index 50
+    bottom 0
+    left 0
+    width 100%
+    height (98/$rem)
+    background #fafafa
+    display flex
+    flex-direction row
+    align-items center
+    .guide_item
+      position: relative;
+      display: block
+      text-align center
+      font-size (16/$rem)
+      color #666
+      line-height 1
+      width 20%
+      &.on
+        color #b4282d
+      .title
+        font-size (24/$rem)
+        margin-bottom (2/$rem)
+        margin-top (7/$rem)
+      .item_icon
+        display: inline-block
+        vertical-align middle
+        background-repeat no-repeat
+        width (39.98/$rem)
+        height (39.98/$rem)
+        .iconfont
+          font-size (38/$rem)

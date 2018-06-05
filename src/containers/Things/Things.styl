@@ -1,0 +1,129 @@
+@import "../../assets/stylus/mixins.styl"
+$rem = 750/10rem
+.wrap
+  width 100%
+  background #f4f4f4
+  .container
+    position relative
+    top (76/$rem)
+    margin-bottom (98/$rem)
+    .navCarrousel
+      background white
+      padding (20/$rem) 0
+      .swiper-slide
+        position relative
+        img
+          border-radius (10/$rem)
+        .navContent
+          position absolute
+          left 0
+          right 0
+          top 0
+          bottom 0
+          margin auto
+          width (465/$rem)
+          height (195/$rem)
+          background rgba(255,255,255,.9)
+          display flex
+          align-items center
+          justify-content center
+          flex-direction column
+          .subTitle
+            font-size (20/$rem)
+            color #7f7f7f
+            line-height (30/$rem)
+            padding 0 (8/$rem)
+          .titile
+            font-size (32/$rem)
+            color #333
+            margin-top (16/$rem)
+            font-weight 700
+            line-height (48/$rem)
+          .desc
+            font-size (24/$rem)
+            color #333
+            margin-top (4/$rem)
+            line-height (36/$rem)
+    .navSub
+      background white
+      padding (32/$rem) (30/$rem) (32/$rem)
+      margin-bottom (20/$rem)
+      clearFix()
+      .newsList_news
+        display flex
+        align-items center
+        float left
+        overflow hidden
+        clearFix()
+        .newsList_items
+          position relative
+          float left
+          width (164/$rem)
+          height (230/$rem)
+          margin-right (24/$rem)
+          .newsList_items_image
+            width 100%
+            border-radius (8/$rem)
+            margin-bottom (22/$rem)
+          .contentText
+            position absolute
+            top 0
+            right 0
+            height (32/$rem)
+            border-radius (4/$rem)
+            background url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/rbGradient-049c62dfb5.png") no-repeat
+            background-size 100%
+            .preferential
+              font-size (24/$rem)
+              text-align right
+              line-height (32/$rem)
+              color #fff
+          .contentTitle_text
+            font-size (24/$rem)
+            color #333
+            width (184/$rem)
+            height (30/$rem)
+            text-align center
+            margin-left (-10/$rem)
+            line-height 1
+    .recommend
+      margin-bottom (20/$rem)
+    .yxLook
+      background white
+      width 100%
+      bottom-border-1px(gray)
+      .yxLook_head
+        width 100%
+        height (120/$rem)
+        background white
+        font-size (32/$rem)
+        line-height (120/$rem)
+        text-align center
+      .container
+        width 100%
+        .container_image
+          &>img
+            width 100%
+            height (1000/$rem)
+        .container_text
+          box-sizing border-box
+          padding (16/$rem) (30/$rem) (46/$rem)
+          clearFix()
+          .container_text_top
+            margin-bottom (24/$rem)
+            margin-top (-25/$rem)
+            &>img
+              display inline-block
+              width (46/$rem)
+              height (46/$rem)
+              border-radius (50%)
+              border 1px solid #d9d9d9
+              vertical-align middle
+            .text_top
+              color #333
+              font-size (24/$rem)
+              vertical-align middle
+          .container_text_bottom
+            font-size (28/$rem)
+            line-height (1.6)
+            color #7f7f7f

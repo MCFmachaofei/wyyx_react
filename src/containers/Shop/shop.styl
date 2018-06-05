@@ -1,0 +1,300 @@
+@import "../../assets/stylus/mixins.styl"
+$rem = 750/10rem
+section.wrap
+  position relative
+  width 100%
+  background #f4f4f4
+  .headTop
+    height 148px
+    width 100%
+    position fixed
+    top 0
+    z-index 10
+    header.head
+      width 100%
+      align-items center
+      padding (16/$rem) (30/$rem)
+      background white
+      box-sizing border-box
+      clearFix()
+      .logo
+        float left
+        width (138/$rem)
+        height (39.98/$rem)
+        background-image url("images/logo.png")
+        background-position center
+        background-size cover
+        margin-top (8/$rem)
+        margin-right (20/$rem)
+        vertical-align middle
+      .search
+        float right
+        display flex
+        justify-content center
+        width (532/$rem)
+        height (56/$rem)
+        font-size (28/$rem)
+        background #ededed
+        border-radius (8/$rem)
+        align-items center
+        vertical-align middle
+        .icon
+          background url("images/search.png") no-repeat
+          width (28/$rem)
+          height (28/$rem)
+          background-size 100% 100%
+          vertical-align middle
+          margin-right (10/$rem)
+        .search_text
+          color #666
+          box-sizing border-box
+          vertical-align middle
+    .navList
+      clearFix()
+      height (60/$rem)
+      background white
+      &>ul
+        padding 0 (30/$rem)
+        display flex
+        flex-flow row nowrap
+        white-space nowrap
+        float left
+        &>li
+        .item
+          position relative
+          float left
+          font-size (28/$rem)
+          color #333
+          padding 0 (16/$rem)
+          line-height (60/$rem)
+          text-align center
+          &:not(#first)
+            margin-left (48/$rem)
+          &.on::after
+            content ''
+            position absolute
+            left 0
+            bottom 0
+            width 100%
+            height (4/$rem)
+            background #b4282d
+  .wrapContainer
+    position relative
+    top 148px
+    margin-bottom (100/$rem)
+    .msite_nav
+      margin-bottom (20/$rem)
+      background white
+      .swiper-container
+        width 100%
+        height (400/$rem)
+        .swiper-wrapper
+          width 100%
+          height 100%
+        .swiper-pagination
+          .swiper-pagination-bullet
+            width (40/$rem)
+            height (4/$rem)
+            background #f5f5f5
+            border-radius 0
+      .describe
+        position relative
+        top 0
+        width 100%
+        height (72/$rem)
+        padding 0 (30/$rem)
+        box-sizing border-box
+        .describe_item
+          width 33.333%
+          float left
+          .describe_item_title
+            font-size (24/$rem)
+            color #333333
+            line-height (72/$rem)
+            vertical-align middle
+            .describe_icon
+              display inline-block
+              width (32/$rem)
+              height (32/$rem)
+              background url("images/yes.png") no-repeat
+              background-size 100%
+              vertical-align middle
+              margin-right (8/$rem)
+    section.brand
+      position relative
+      top 0
+      padding-bottom (20/$rem)
+      box-sizing border-box
+      background white
+      .brand_head
+        width 100%
+        height (110/$rem)
+        .title
+          font-size (32/$rem)
+          vertical-align middle
+          line-height (110/$rem)
+          text-align center
+          .brand_icon
+            display inline-block
+            vertical-align middle
+            width (30/$rem)
+            height (30/$rem)
+            background url("images/more.png") no-repeat
+            margin-left (10/$rem)
+            background-size 100% 100%
+      .brand_item
+        width 100%
+        padding  0 (16/$rem)
+        height (468/$rem)
+        padding-bottom (8/$rem)
+        & > li
+          width (355/$rem)
+          height (236/$rem)
+          box-sizing border-box
+          float left
+          margin-bottom (8/$rem)
+          background #f4f4f4
+          position relative
+          .about
+            position: absolute
+            left 0
+            top 0
+            padding (20/$rem) 0 0 (20/$rem)
+            z-index 4
+            line-height (15/$rem)
+            h4.titile
+              color #333333
+              font-size (28/$rem)
+              margin-bottom (6/$rem)
+            .price
+              font-size (24/$rem)
+            .news
+              width (64/$rem)
+              height (32/$rem)
+              margin-top (40/$rem)
+              display block
+              background url("images/new.png") no-repeat
+              background-size 100% 100%
+          img
+            width 100%
+            height 100%
+            position relative
+            z-index 3
+        &>li:nth-child(1), &>li:nth-child(3)
+          margin-right (8/$rem)
+    section.newThings
+      top-border-1px(#e4e4e4)
+      clearFix()
+      .newsFirst
+        width 100%
+        height (260/$rem)
+        background url("images/bg.png")
+        background-size 100% 100%
+        background-color white
+        position relative
+        &>div.titleText
+          position absolute
+          left 50%
+          top 50%
+          margin auto
+          transform translate(-50%, -50%)
+          &>p:nth-child(1)
+            text-align center
+            font-size (36/$rem)
+            color #8BA0B6
+          &>p:nth-child(2)
+            margin (16/$rem) auto 0
+            width (240/$rem)
+            height (56/$rem)
+            font-size (28/$rem)
+            line-height (56/$rem)
+            background #D8E5F1
+            color #8BA0B6
+            border-radius (8/$rem)
+            text-align center
+      .news1
+        clearFix()
+      .news2
+          clearFix()
+      .goodsFisrt
+        width 100%
+        height (260/$rem)
+        background url("images/bg2.png")
+        background-size 100% 100%
+        position relative
+        &>div.titleText
+          position absolute
+          left 50%
+          top 50%
+          margin auto
+          transform translate(-50%, -50%)
+          &>p:nth-child(1)
+            text-align center
+            font-size (36/$rem)
+            color #B4A078
+          &>p:nth-child(2)
+            margin (16/$rem) auto 0
+            width (240/$rem)
+            height (56/$rem)
+            font-size (28/$rem)
+            line-height (56/$rem)
+            background #F4E9CB
+            color #B4A078
+            border-radius (8/$rem)
+            text-align center
+    section.subject
+      background-color white
+      margin-bottom (20/$rem)
+      width 100%
+      clearFix()
+      header.subject_head
+        width 100%
+        height (110/$rem)
+        display flex
+        flex-flow row nowrap
+        justify-content center
+        align-items center
+        .head_title
+          color #333
+          font-size (32/$rem)
+          vertical-align middle
+          &>.subject_icon
+            display inline-block
+            width (30/$rem)
+            height (30/$rem)
+            background url("images/more.png") no-repeat
+            background-size 100% 100%
+            vertical-align middle
+            margin-right (10/$rem)
+      .subject_content
+        clearFix()
+        padding 0 (30/$rem) (36/$rem)
+        .subject_container
+          clearFix()
+          float left
+          display flex
+          align-items center
+          &>.subject_items:last-child
+            padding-right (30/$rem)
+          .subject_items
+            width (575/$rem)
+            margin-right (21/$rem)
+            .subject_items_image
+              width 100%
+              border-radius (15/$rem)
+              margin-bottom (16/$rem)
+            .title
+              font-size (28/$rem)
+              width (410/$rem)
+              float left
+              margin-bottom (2/$rem)
+            .pirce
+              float right
+              color #b4282d
+              font-size (28/$rem)
+              line-height (32/$rem)
+            .about
+              width (575/$rem)
+              font-size (28/$rem)
+              color #7f7f7f
+              padding-top (10/$rem)
